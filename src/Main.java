@@ -23,6 +23,17 @@ public class Main {
             }
         }
         System.out.println("Максимальная частота символа " + maxC + " " + max);
+
+        int min = Integer.MAX_VALUE;
+        char minC = 0;
+        for (char mC : symbol.keySet()) {
+            if (symbol.get(mC) < min) {
+                min = symbol.get(mC);
+                minC = mC;
+            }
+        }
+        System.out.println("Минимальная частота символа " + minC + " " + min);
+
     }
 
 }
